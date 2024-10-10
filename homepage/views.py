@@ -1,8 +1,8 @@
 from django.shortcuts import render
 
 # Create your views here.
-def homeview(request):
+def homepageview(request):
     context = {
         'name': 'Dallas Whiskey Club',
     }
-    return render(request, 'homepage/home.html')
+    return render(request, 'homepage.html', context)
